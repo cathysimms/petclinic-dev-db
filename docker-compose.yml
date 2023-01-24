@@ -38,7 +38,7 @@ services:
    volumes:
    - type: bind
     #  source: ./nginx.conf
-     source: /home/ubuntu/petclinic/nginx.conf
+     source: ./nginx/nginx.conf
      target: /etc/nginx/nginx.conf
     #  target: /home/ubuntu/petclinic/nginx.conf
    ports:
