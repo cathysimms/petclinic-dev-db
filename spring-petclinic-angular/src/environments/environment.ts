@@ -23,5 +23,5 @@
 
 export const environment = {
   production: false,
-  REST_API_URL: 'http://nginx:80/'
+  REST_API_URL: 'http://nginx:90/'
 };
