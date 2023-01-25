@@ -14,10 +14,10 @@ services:
       published: 8080
       protocol: tcp
   backend:
-    # environment:
+    environment:
     #   # MYSQL_DATABASE: 'petclinic'
-    #   USER_NAME: ${MY_USER}
-    #   USER_PASSWORD: ${MY_PASSWORD}
+      USER_NAME: ${MY_USER}
+      USER_PASSWORD: ${MY_PASSWORD}
     #   # MYSQL_ROOT_PASSWORD: ${MY_PASSWORD}
     container_name: spring-petclinic-rest
     build: ./spring-petclinic-rest
@@ -46,7 +46,6 @@ services:
       target: /etc/nginx/nginx.conf
    depends_on:
     - backend
-    
 
 #   petclinic:
 #     build: ./spring-database
