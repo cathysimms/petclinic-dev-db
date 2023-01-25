@@ -37,8 +37,8 @@ services:
    networks: 
      - my_network
    ports:
-    - target: 90
-      published: 90 
+    - target: 80
+      published: 80 
       protocol: tcp
    volumes:
     - type: bind
