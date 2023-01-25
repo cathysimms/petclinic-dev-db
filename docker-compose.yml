@@ -39,6 +39,9 @@ services:
    - type: bind
      source: ./nginx/nginx.conf
      target: /etc/nginx/nginx.conf
+   networks: 
+     - default
+     - my_network
    ports:
     - target: 90
       published: 90 
