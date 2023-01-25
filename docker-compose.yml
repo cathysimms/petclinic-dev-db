@@ -3,8 +3,8 @@ services:
   frontend:
     container_name: spring-petclinic-angular
     build: ./spring-petclinic-angular
-    image: 16.3-alpine-spring-petclinic-angular:latest
-    # image: cathysimms/spring-petclinic-angular:latest
+    # image: 16.3-alpine-spring-petclinic-angular:latest
+    image: cathysimms/spring-petclinic-angular:latest
     depends_on:
     - backend
     networks: 
@@ -21,8 +21,8 @@ services:
     #   # MYSQL_ROOT_PASSWORD: ${MY_PASSWORD}
     container_name: spring-petclinic-rest
     build: ./spring-petclinic-rest
-    image: openjdk-spring-petclinic-rest:latest  
-    # image: cathysimms/spring-petclinic-rest:latest
+    # image: openjdk-spring-petclinic-rest:latest  
+    image: cathysimms/spring-petclinic-rest:latest
     # depends_on:
     #  - petclinic
     networks: 
